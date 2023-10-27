@@ -1,0 +1,163 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url("./image/fond.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 20px;
+  
+  margin-bottom: 40px;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+}
+.img_div{
+  margin-top: 450px;
+  margin-bottom: -550px;
+
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.images-container img {
+  display: none;
+  max-width: 100%;
+}
+
+#word-display {
+  font-size: 2vw;
+  letter-spacing: 5px;
+  margin-top: 300px;
+  color: white;
+  font-family: 'Shadows Into Light Two', cursive;
+}
+
+#error-count {
+  font-size: 2vw;
+  margin-top: 10px;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#result {
+  font-size: 2vw;
+  font-weight: bold;
+  margin-top: -100px;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+button {
+  margin: 5px;
+  font-size: 1vw;
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: rgb(255, 149, 0);
+  border-radius: 10px;
+  box-shadow: 5px 7px 20px 10px rgba(0, 0, 0, 0.44);
+}
+
+#new-game-container {
+  margin-top: 180px;
+}
+
+#next {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.etape1 {
+  display: block;
+}
+
+.etape {
+  position: absolute;
+  top: 15%;
+  left: 48%;
+  display: none;
+}
+
+#button-container {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #h1{
+    font-size: 8px;
+  }
+  #word-display {
+    font-size: 20px;
+    margin-top: 150px;
+  }
+
+  #error-count {
+    font-size: 20px;
+  }
+
+  #result {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 2vw;
+  }
+  .etape{
+    top: 15%;
+    height: 200px;
+    left: 45%;
+  }
+  #next{
+    top:50%
+  }
+  #new-game-button{
+    margin-top:250px;
+   
+  }
+}
+
+@media (max-width: 480px) {
+  #word-display {
+    font-size: 4vw;
+    margin-bottom: -150px;
+  }
+
+  #error-count {
+    font-size: 5vw;
+  }
+
+  #result {
+    font-size: 4vw;
+    margin-top: -10px;
+  }
+
+  button {
+    font-size: 3vw;
+  }
+  #new-game-button{
+    margin-top:180px;
+   
+  }
+  #button-container {
+    margin-top: 80px;
+  }
+  .etape{
+    top: 15%;
+  }
+}
